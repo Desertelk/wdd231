@@ -1,0 +1,27 @@
+@media only screen and (min-width: 40rem) {
+    header {
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .main-nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: end;
+        background-color: transparent;
+    }
+
+    .main-nav li a {
+        color: var(--midnight-blue);
+        border: none;
+    }
+
+    .main-nav li a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}

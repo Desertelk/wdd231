@@ -1,0 +1,90 @@
+:root {
+    /* Colors */
+    --midnight-blue: #0A192F;
+    --soft-ice: #F0F4F8;
+    --white: #FFF;
+    --deep-indigo: #112240;
+    --body-text: #486581;
+    --accent: #0077B5;
+}
+
+* {
+    font-family: 'Lora', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 0;
+    border-bottom: solid 1px var(--accent);
+}
+
+.branding {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 10px;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.main-nav ul {
+    display: none;
+    grid-template-columns: 1fr;
+}
+
+.main-nav ul.show {
+    display: grid;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    border-top: 1px solid var(--deep-indigo);
+}
+
+.main-nav li a:hover {
+    background-color: var(--deep-indigo);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--deep-indigo);
+    padding-top: 3px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--midnight-blue);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
