@@ -1,4 +1,4 @@
-@media only screen and (min-width: 40rem) {
+@media screen and (min-width: 768px) {
     header {
         grid-template-columns: auto 1fr;
         align-items: center;
@@ -8,10 +8,15 @@
         display: none;
     }
 
+    .main-nav {
+        align-items: center;
+        margin-bottom: 23px;
+    }
+
     .main-nav ul {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-        justify-content: end;
+        display: flex;
+        justify-content: flex-end;
+        gap: 1.5rem;
         background-color: transparent;
     }
 
@@ -23,5 +28,19 @@
     .main-nav li a:hover {
         background-color: transparent;
         text-decoration: underline;
+    }
+
+    main {
+        max-width: 1000px ;
+    }
+
+    .about-section {
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    .about-photo img {
+        max-width: 100%;
+        height: auto;
     }
 }

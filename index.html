@@ -9,8 +9,8 @@
 
     <!-- Styles sheets -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
 
     <!-- Font -->
@@ -35,13 +35,15 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus odio quia, minima esse error harum repudiandae velit vero recusandae neque tempora possimus optio suscipit, repellat in obcaecati. Maiores ad rerum, voluptates corrupti, nesciunt quis id exercitationem debitis ipsum sequi ut enim obcaecati modi quia reprehenderit repellendus perferendis earum odit alias.
+                    My name is Caden Watts. I am studying programming at BYU Pathway. I enjoy playing hockey and playing other games with my family and friends. I enjoy playing the piano and singing. I currently live in Peru with my wife of 2 years. I enjoy learning how to program and I am currently taking CSE 210 and WDD231. 
                 </p>
             </div>
 
             <div class="about-photo">
                 <h2>Photo</h2>
-                <div class="placeholder"></div>
+                <div class="placeholder">
+                    <img src="images/profile.jpg" alt="profile picture">
+                </div>
             </div>
         </section>
 
@@ -49,9 +51,9 @@
             <h2>Web certificate courses</h2>
 
             <div id="course-filters" class="course-filters">
-                <button id="all" class="course-button"></button>
-                <button id="cse" class="course-button"></button>
-                <button id="wdd" class="course-button"></button>
+                <button id="allBtn" class="course-button">ALL</button>
+                <button id="cseBtn" class="course-button">CSE</button>
+                <button id="wddBtn" class="course-button">WDD</button>
             </div>
 
             <div id="course-list" class="course-list">
@@ -60,13 +62,14 @@
 
             <p id="course-total" class="course-total"></p>
         </section>
-    </main>
-    <footer>
+        <h3>Socials</h3>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/caden-watts-319000307/" target="_blank" ><img src="images/linkedin.svg" alt="linkedin icon"></a>
             <a href="https://github.com/Desertelk" target="_blank" ><img src="images/github.svg" alt="github icon"></a>
             <a href="https://www.facebook.com/caden.watts.31/" target="_blank" ><img src="images/facebook (1).svg" alt="facebook icon"></a>
         </div>
+    </main>
+    <footer>
         <p>©️<span id="currentYear"></span> Caden Watts Lima, Peru</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>

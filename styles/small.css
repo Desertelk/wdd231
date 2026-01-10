@@ -46,16 +46,25 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 0 10px;
+    position: relative;
 }
 
 .main-nav ul {
     display: none;
     grid-template-columns: 1fr;
     background-color: var(--midnight-blue);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--midnight-blue);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
 }
 
 .main-nav ul.show {
-    display: grid;
+    display: block;
 }
 
 .main-nav li a {
@@ -68,6 +77,10 @@ header {
 
 .main-nav li a:hover {
     background-color: var(--deep-indigo);
+}
+
+.main-nav a.active {
+    text-decoration: underline;
 }
 
 header img {
@@ -113,17 +126,20 @@ header span {
 .about-text, .about-photo {
     background-color: var(--soft-ice);
     padding: 1rem;
-    border-radius: 4px;
+    color: var(--body-text);
+    font-size: 1.6rem;
 }
 
 .about-photo h2 {
     text-align: center;
 }
 
-.placeholder {
-    width: 100%;
-    background-color: #CCC;
-    margin-top: .5rem;
+.about-photo img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    
 }
 
 /* COURSES */
@@ -135,8 +151,9 @@ header span {
 
 .course-filters {
     display: flex;
-    gap: .5rem;
+    gap: 3rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .course-filters button {
@@ -145,15 +162,80 @@ header span {
     border: 1px solid var(--deep-indigo);
     background-color: var(--white);
     cursor: pointer;
+    
+}
+
+.course-button {
+    max-width: 130px;
+    padding: 0.5rem;
+    border: 1px solid var(--deep-indigo);
+    background-color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.course-button:hover {
+    background-color: var(--midnight-blue);
+    color: var(--white);
 }
 
 .course-list {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: .5rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .course-total {
     text-align: center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--midnight-blue);
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: .5rem;
+    
+}
+
+.social-links a, img {
+    width: 70px;
+    height: auto;
+    
+}
+
+h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+.course {
+    width: 250px;
+    padding: 0.75rem;
+    border: 1px solid var(--deep-indigo);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.course.completed {
+    background-color: var(--accent);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.course.completed::before {
+    background-color: var(--accent);
+    color: var(--white);
+    font-weight: bold;
+    content: "\2713"
 }
