@@ -1,0 +1,206 @@
+:root {
+    --primary-background: #333F48;
+    --gold-accent: #B4975A;
+    --gold-highlight: #FFD700;
+    --light-text: #FFF;
+    --dark-text: #000;
+    --card-background: #f5f5f5;
+    --light-border: #DDD;
+    --nav-background: #333F48;
+    --nav-hover: #1F262C;
+}
+
+body, h1, h2, h3, p, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--light-text);
+    color: var(--dark-text);
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+header, footer {
+    background-color: var(--primary-background);
+    color: var(--light-text);
+    padding: 1rem;
+}
+
+.view-buttons {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.view-buttons button {
+    background-color: var(--gold-accent);
+    color: var(--dark-text);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.3rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.view-buttons button:hover {
+    background-color: var(--gold-highlight);
+}
+
+.member-card {
+    background-color: var(--card-background);
+    border: 1px solid #DDD;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rhba(0,0,0,0.1);
+}
+
+a {
+    color: var(--gold-accent);
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFD700
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#ham-btn {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+#ham-btn::before {
+    content: "☰";
+}
+
+#ham-btn.show::before {
+    content: "✖";
+}
+
+.main-nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: var(--nav-background);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul.show {
+    display: block;
+}
+
+.main-nav li a {
+    display: block;
+    padding: 1rem;
+    color: var(--light-text);
+    text-decoration: none;
+    border-top: 1px solid #444;
+}
+
+.main-nav li a:hover {
+    background-color: var(--nav-hover);
+}
+
+.main-nav a.active {
+    text-decoration: underline;
+}
+
+#members.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#members.list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.member-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.member-header img {
+    max-width: 80px;
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.member-card h3{
+    margin: 0.3rem 0;
+    font-size: 1.3rem;
+    color: var(--primary-background)
+}
+
+.address, .phone {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.description {
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.website {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--gold-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.website:hover {
+    color: var(--gold-highlight);
+}
+
+.badge {
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge.member {
+    background-color: var(--primary-background);
+    color: var(--light-text);
+}
+
+.badge.silver {
+    background-color: #c0c0c0;
+    color: var(--dark-text)
+}
+
+.badge.gold {
+  background-color: #B4975A;
+  color: #000000;
+}
+
+footer {
+    
+}

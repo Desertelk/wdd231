@@ -1,0 +1,18 @@
+{
+    "family_name":"Watts",
+    "date_moved":"2026-04-18",
+    "number_of_people": 5,
+    "visited": false,
+    "family_members": [
+        {
+            "name": "Caden Watts",
+            "gender": "Male",
+            "brithdate": "2001-02-01"
+        },
+        {
+            "name": "Zofia Watts",
+            "gender": "Female",
+            "brithdate": "2002-01-24"
+        }
+    ]
+}
