@@ -201,6 +201,44 @@ a:hover {
   color: #000000;
 }
 
+.home section {
+    margin-bottom: 2rem;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    padding: 1.5rem 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 200px;
+    bottom: 7%;
+    left: 50%;
+    color: var(--light-border);
+    text-align: center;
+    background-color: rgba(0,0,0,0.55);
+    transform: translateX(-50%);
+
+}
+
+.hero-text h2{
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.hero-text a {
+    font-size: 0.9rem;
+}
+
 footer {
     margin-top: 2rem;
     padding: 1rem;

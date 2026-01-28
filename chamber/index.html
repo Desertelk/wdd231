@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Las Vegas Chamber of Commerce Directory</title>
+        <meta name="author" content="Caden Watts">
+        <meta name="description" content="Business directory of the Las Vegas Chamber of Commerce">
+
+        <meta property="og:title" content="Las Vegas Chamber of Commerce Directory">
+        <meta property="og: description" content="Discover trusted local businesses in the Las Vegas valley. These are just some of the many companies that are well known throughout Vegas and are trusted by locals and tourists alike.">
+        <meta property="og:image" content="https://desertelk.github.io/wdd231/chamber/images/las-vegas-sign.jpg">
+        <meta property="og:url" content="https://desertelk.github.io/wdd231/chamber/directory.html#">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="images/favicon.ico">
+        
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <script src="scripts/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Las Vegas Chamber of Commerce</h1>
+            <nav id="main-nav" class="main-nav">
+                <button id="ham-btn" class="hamburger"></button>
+            </nav>
+        </header>
+        <main class="home">
+            <h2>Home</h2>
+            <section class="hero">
+                <picture>
+                    <source srcset="images/las-vegas-skyline-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/las-vegas-skyline-med.webp" media="(min-width: 500px)">
+                    <img src="images/las-vegas-skyline-small.webp" alt="Las Vegas Skyline" width="500" height="250">
+                </picture>
+                <div class="hero-text">
+                    <h2>Connecting Business in Las Vegas</h2>
+                    <a href="join.html" class="cta-btn">Join the Chamber</a>
+                </div>
+            </section>
+
+            <section class="events">
+                <h2>Current Events</h2>
+                <ul>
+                    <li>Consumer Electronics Show - Jan 6</li>
+                    <li>WrestleMania - Apr 1</li>
+                    <li>Formula 1 Las Vegas Grand Prix - Nov 19</li>
+                </ul>
+            </section>
+
+            <!-- Weather -->
+            <section class="weather">
+                <h2>Las Vegas Weather</h2>
+                <p>Current Temperature: <span id="current-temp"></span></p>
+                <p>Conditions: <span id="weather-desc"></span></p>
+
+                <div id="forecast" class="forecast">
+                    <p><strong>3-Day Forecast</strong></p>
+                    <div id="forecast"></div>
+                </div>
+            </section>
+
+            <!-- Spotlights -->
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container"></div>
+            </section>
+        </main>
+        <footer>
+            <p>Contact: info@lvchamber.org</p>
+            <p>©️<span id="currentYear"></span> Caden Watts Lima, Peru</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

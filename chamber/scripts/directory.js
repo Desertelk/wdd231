@@ -5,7 +5,7 @@ yearElement.textContent = new Date().getFullYear();
 modifiedElement.textContent = document.lastModified;
 
 const navItems = [
-    {name: "Home", url: "#"},
+    {name: "Home", url: "index.html"},
     {name: "Directory", url: "directory.html"},
     {name: "Join", url: "#"},
     {name: "Discover", url: "#"}
