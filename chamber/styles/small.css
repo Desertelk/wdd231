@@ -244,3 +244,104 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+.weather {
+    background: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--light-border);
+}
+
+.current-weather img {
+    width: 80px;
+}
+
+.forecast p {
+    margin: 0.3rem 0;
+}
+
+.updates {
+    padding: 1rem;
+}
+
+.updates h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-background);
+}
+
+.updates-grid {
+    display: grid;
+    gap: 1rem;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: var(--primary-background);
+    color: var(--light-text);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#spotlight-container {
+    display: grid;
+    gap: 1rem;
+}
+
+#spotlight-container .card {
+    position: relative;
+    padding-bottom: 1rem;
+    max-width: 800px;
+}
+
+#spotlight-container .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#spotlight-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: var(--light-text);
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+
+
+
+.card h3 {
+    background-color: var(--gold-accent);
+    color: var(--dark-text);
+    padding: 0.6rem 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 0.4rem 1rem;
+    margin: 0;
+    font-size: .95rem;
+}
+
+.current-weather p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--gold-highlight);
+    letter-spacing: 0.5px;
+}
+
+.current-weather img {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+.forecast p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}

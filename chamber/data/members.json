@@ -4,7 +4,7 @@
         "address": "4500 Paradise Rd, Las Vegas, NV",
         "phone": "702-555-1001",
         "website": "https://neontech.com",
-        "image": "neontech.png",
+        "image": "neontech.jpg",
         "level": 3,
         "description": "Enterprise IT services and cybersecurity solutions."
     },
@@ -13,7 +13,7 @@
         "address": "3200 S Las Vegas Blvd, Las Vegas, NV",
         "phone": "702-555-1002",
         "website": "https://silverstaterealty.com",
-        "image": "silverstate.png",
+        "image": "silverstate.jpg",
         "level": 2,
         "description": "Residential and commercial real estate experts."
     },
@@ -22,7 +22,7 @@
         "address": "8120 W Sahara Ave, Las Vegas, NV",
         "phone": "702-555-1003",
         "website": "https://desertbloomlv.com",
-        "image": "desertbloom.png",
+        "image": "desertbloom.jpg",
         "level": 1,
         "description": "Professional desert landscaping and irrigation."
     },
@@ -31,7 +31,7 @@
         "address": "601 S Rancho Dr, Las Vegas, NV",
         "phone": "702-555-1004",
         "website": "https://vegaslegalgroup.com",
-        "image": "vegaslegal.png",
+        "image": "vegaslegal.jpg",
         "level": 3,
         "description": "Business and corporate law firm."
     },
@@ -40,7 +40,7 @@
         "address": "3750 S Las Vegas Blvd, Las Vegas, NV",
         "phone": "702-555-1005",
         "website": "https://stripfitness.com",
-        "image": "stripfitness.png",
+        "image": "stripfitness.jpg",
         "level": 1,
         "description": "24/7 modern fitness and training facility"
     },
@@ -49,7 +49,7 @@
         "address":"11011 W Charleston Blvd, Las Vegas, NV",
         "phone": "702-555-1006",
         "website": "https://redrockcafe.com",
-        "image": "redrockcafe.png",
+        "image": "redrockcafe.jpg",
         "level": 1,
         "description": "Local cafe featuring Nevada-roasted coffee."
     },
@@ -58,7 +58,7 @@
         "address": "6555 S Jones Blvd, Las Vegas, NV",
         "phone": "702-555-1007",
         "website": "https://highrollermarketing.com",
-        "image": "highroller.png",
+        "image": "highroller.jpg",
         "level":2,
         "description": "Digital marketing and branding agency."
     }
