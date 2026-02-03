@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Vegas Chamber of Commerce Directory</title>
+    <meta name="author" content="Caden Watts">
+    <meta name="description" content="Business directory of the Las Vegas Chamber of Commerce">
+
+    <meta property="og:title" content="Las Vegas Chamber of Commerce Directory">
+    <meta property="og: description" content="Discover trusted local businesses in the Las Vegas valley. These are just some of the many companies that are well known throughout Vegas and are trusted by locals and tourists alike.">
+    <meta property="og:image" content="https://desertelk.github.io/wdd231/chamber/images/las-vegas-sign.jpg">
+    <meta property="og:url" content="https://desertelk.github.io/wdd231/chamber/directory.html#">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Las Vegas Chamber of Commerce</h1>
+        <nav id="main-nav" class="main-nav">
+            <button id="ham-btn" class="hamburger"></button>
+        </nav>
+    </header>
+    <main>
+        <h2>Thank You for Joining</h2>
+        <ul>
+            <li>First Name: </li>
+            <li>Last Name: </li>
+            <li>Email: </li>
+            <li>Phone: </li>
+            <li>Business: </li>
+            <li>Date Submitted: </li>
+        </ul>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            ["first","last","email","phone","business","timestamp"]
+            .forEach(id => {
+                document.getElementById(id).textContent = params.get(id);
+            });
+        </script>
+    </main>
+    <footer>
+        <p>Contact: info@lvchamber.org</p>
+         <p>©️<span id="currentYear"></span> Caden Watts Lima, Peru</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
