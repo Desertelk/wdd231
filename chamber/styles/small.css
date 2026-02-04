@@ -254,10 +254,14 @@ footer {
 
 .current-weather img {
     width: 80px;
+    display: block;
+    margin: 0.5rem auto;
 }
 
 .forecast p {
     margin: 0.3rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .updates {
@@ -313,7 +317,7 @@ footer {
 
 
 
-.card h3 {
+.card h2 {
     background-color: var(--gold-accent);
     color: var(--dark-text);
     padding: 0.6rem 1rem;
@@ -336,16 +340,6 @@ footer {
     letter-spacing: 0.5px;
 }
 
-.current-weather img {
-    display: block;
-    margin: 0.5rem auto;
-}
-
-.forecast p {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
 .membership-cards {
     display: grid;
     gap: 1rem;
@@ -359,7 +353,7 @@ footer {
     border-radius: 10px;
 }
 
-.membership-cards h3 {
+.membership-cards h2 {
     margin: 0;
 }
 
@@ -380,10 +374,6 @@ footer {
     }
 }
 
-.join-page {
-    display: grid;
-    gap: 2rem;
-}
 
 .join-form {
     display: grid;
@@ -505,4 +495,11 @@ input[type="submit"]:hover {
 .btn:hover {
     background-color: var(--gold-highlight);
     color: var(--dark-text)
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
 }
