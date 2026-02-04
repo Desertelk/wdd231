@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,24 +31,39 @@
             <button id="ham-btn" class="hamburger"></button>
         </nav>
     </header>
-    <main>
-        <h2>Thank You for Joining</h2>
-        <ul>
-            <li>First Name: </li>
-            <li>Last Name: </li>
-            <li>Email: </li>
-            <li>Phone: </li>
-            <li>Business: </li>
-            <li>Date Submitted: </li>
-        </ul>
+    <main class="thankyou-page">
+        <section class="thankyou-card">
 
-        <script>
-            const params = new URLSearchParams(window.location.search);
-            ["first","last","email","phone","business","timestamp"]
-            .forEach(id => {
-                document.getElementById(id).textContent = params.get(id);
-            });
-        </script>
+            <h2>Thank You for Joining</h2>
+            <p>We're looking forward to reviewing your submission. Here's a summary:</p>
+            <div class="summary">
+                <ul>
+                    <li>First Name: <span id="first"></span></li>
+                    <li>Last Name: <span id="last"></span></li>
+                    <li>Email: <span id="email"></span></li>
+                    <li>Phone: <span id="phone"></span></li>
+                    <li>Business: <span id="business"></span></li>
+                    <li>Date Submitted: <span id="timestamp"></span></li>
+                </ul>
+            </div>
+
+            <a href="index.html" class="btn">Return Home</a>
+            <script>
+                const params = new URLSearchParams(window.location.search);
+                ["first","last","email","phone","business"]
+                .forEach(id => {
+                    document.getElementById(id).textContent = params.get(id);
+                });
+                
+                const rawTimestamp = params.get("timestamp");
+                const formattedDate = new Date(rawTimestamp).toLocaleString("en-US", {
+                    dateStyle: "long",
+                    timeStyle: "short"
+                });
+
+                document.getElementById("timestamp").textContent = formattedDate;
+            </script>
+        </section>
     </main>
     <footer>
         <p>Contact: info@lvchamber.org</p>

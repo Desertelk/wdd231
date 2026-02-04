@@ -40,13 +40,21 @@ hamBtn.addEventListener('click', () => {
 
 document.getElementById("timestamp").value = new Date().toISOString();
 
-document.querySelector("[data-modal]").forEach(link => {
-    link.addEventListener("click", e => {
+const modalLinks = document.querySelectorAll("[data-modal]");
+const dialogs = document.querySelectorAll("dialog");
+
+modalLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
         e.preventDefault();
-        document.getElementById(link.dataset.modal).showModal();
+        const modalID = link.dataset.modal;
+        const dialog = document.getElementById(modalID);
+        dialog.showModal();
     });
 });
 
-document.querySelectorAll("dialog button").forEach(btn => {
-    btn.addEventListener("click", () => btn.closest("dialog").close());
+dialogs.forEach(dialog => {
+    const closeBtn = dialog.querySelector("button");
+    closeBtn.addEventListener("click", () => {
+        dialog.close();
+    });
 });
