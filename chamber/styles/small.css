@@ -317,7 +317,7 @@ footer {
 
 
 
-.card h2 {
+.card h2, .membership-cards h3 {
     background-color: var(--gold-accent);
     color: var(--dark-text);
     padding: 0.6rem 1rem;
@@ -377,7 +377,7 @@ footer {
 
 .join-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem 1.5rem;
     max-width: 700px;
 }
@@ -396,6 +396,10 @@ footer {
     border-radius: 5px;
     border: 1px solid var(--primary-background);
     font-family: inherit;
+}
+
+.join-form textarea{
+    max-width: 100%;
 }
 
 .join-form fieldset,
@@ -462,7 +466,7 @@ input[type="submit"]:hover {
     text-align: center;
 }
 
-.thankyou-card h2 {
+.thankyou-card h3 {
     color: var(--primary-background);
     margin-bottom: 0.5rem;
 }
@@ -499,7 +503,7 @@ input[type="submit"]:hover {
 
 .join-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
 }

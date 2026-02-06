@@ -53,4 +53,12 @@
         grid-template-columns: 2fr 1fr;
         align-items: start;
     }
+
+    .join-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+    }
 }
