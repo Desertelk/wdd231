@@ -7,8 +7,8 @@ modifiedElement.textContent = document.lastModified;
 const navItems = [
     {name: "Home", url: "index.html"},
     {name: "Directory", url: "directory.html"},
-    {name: "Join", url: "#"},
-    {name: "Discover", url: "#"}
+    {name: "Join", url: "join.html"},
+    {name: "Discover", url: "discover.html"}
 ];
 
 const nav = document.getElementById("main-nav");

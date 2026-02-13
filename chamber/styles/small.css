@@ -144,9 +144,17 @@ a:hover {
 }
 
 .member-header img {
-    max-width: 80px;
+    max-width: 150px;
     max-height: 60px;
     object-fit: contain;
+}
+
+#members.grid .member-header img {
+    display: block;
+}
+
+#members.list .member-header img {
+    display: none;
 }
 
 .member-card h3{
@@ -506,4 +514,63 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background-color: var(--card-background);
+    border: 1px solid var(--light-border);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.discover-card h2 {
+    margin-top: 0;
+    color: var(--primary-background)
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border: 6px;
+}
+
+.discover-card address {
+    font-style: italic;
+    font-size: .9rem;
+    margin: .5rem 0;
+}
+
+.discover-card button {
+    background-color: var(--gold-accent);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: var(--gold-highlight);
+}
+
+.visit-message {
+    background-color: var(--gold-accent);
 }

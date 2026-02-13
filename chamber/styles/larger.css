@@ -1,4 +1,4 @@
-@media (min-width: 768px){
+@media (min-width: 850px){
     #members.grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -21,7 +21,7 @@
     }
 
     .main-nav li a {
-        color: var(--gold-accent);
+        color: var(--light-text);
         border: none;
     }
 
@@ -60,5 +60,17 @@
 
     .join-layout {
         grid-template-columns: 2fr 1fr;
+    }
+
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    .discover-card img {
+        width: 100%;
+        height: auto;
     }
 }

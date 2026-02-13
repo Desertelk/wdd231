@@ -1,0 +1,20 @@
+@media (min-width: 640px){
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card img:hover{
+        transform: scale(1.05);
+        filter: brightness(1.1)
+    }
+}

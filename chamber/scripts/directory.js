@@ -8,7 +8,7 @@ const navItems = [
     {name: "Home", url: "index.html"},
     {name: "Directory", url: "directory.html"},
     {name: "Join", url: "join.html"},
-    {name: "Discover", url: "#"}
+    {name: "Discover", url: "discover.html"}
 ];
 
 const nav = document.getElementById("main-nav");
