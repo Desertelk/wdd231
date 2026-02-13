@@ -50,7 +50,7 @@ if (grid) {
         card.style.gridArea = `card${index + 1}`;
     
         card.innerHTML = `
-            <h2>${place.name}</h2>
+            <h3>${place.name}</h3>
             <figure>
                 <img src="${place.image}" alt="${place.name}" width="300" height="200" loading="lazy">
             </figure>

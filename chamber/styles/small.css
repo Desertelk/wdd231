@@ -26,6 +26,10 @@ main {
     padding: 1rem;
 }
 
+main h2{
+    color: var(--primary-background)
+}
+
 header, footer {
     background-color: var(--primary-background);
     color: var(--light-text);
@@ -537,7 +541,7 @@ input[type="submit"]:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.discover-card h2 {
+.discover-card h3 {
     margin-top: 0;
     color: var(--primary-background)
 }
