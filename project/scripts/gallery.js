@@ -46,61 +46,61 @@ hamBtn.addEventListener('click', () => {
 
 const galleryImages = [
     {
-        src: "/project/images/courtyard-gabion-wall.webp",
+        src: "images/courtyard-gabion-wall.webp",
         alt: "Courtyard Gabion wall",
         category: "Gabion Wall",
         description: "Exterior Courtyard Gabion Wall"
     },
     {
-        src: "/project/images/exterior-steel-cladding.webp",
+        src: "images/exterior-steel-cladding.webp",
         alt: "Exterior steel cladding",
         category: "Cladding",
         description: "Exterior steel cladding on residence"
     },
     {
-        src: "/project/images/gabion-wall-firebox.webp",
+        src: "images/gabion-wall-firebox.webp",
         alt: "Exterior Gabion Wall made Fire box",
         category: "Gabion Wall",
         description: "Exterior Gabion Wall made Fire box"
     },
     {
-        src: "/project/images/gabion-wall-island.webp",
+        src: "images/gabion-wall-island.webp",
         alt: "Exterior Gabion Wall island",
         category: "Gabion Wall",
         description: "Exterior Gabion wall made Island"
     },
     {
-        src: "/project/images/glass-steel-railing.webp",
+        src: "images/glass-steel-railing.webp",
         alt: "Glass and Steel Railing",
         category: "Stair & Railing",
         description: "Interior railing made of Glass panels and Steel bars"
     },
     {
-        src: "/project/images/interior-gabion-wall.webp",
+        src: "images/interior-gabion-wall.webp",
         alt: "Interior Gabion Wall",
         category: "Gabion Wall",
         description: "Internal Gabion Wall"
     },
     {
-        src: "/project/images/interior-steel-cladding.webp",
+        src: "images/interior-steel-cladding.webp",
         alt: "Interior Steel Cladding",
         category: "Cladding",
         description: "Interior Steel Cladding"
     },
     {
-        src: "/project/images/interior-wooden-spiral-staircase.webp",
+        src: "images/interior-wooden-spiral-staircase.webp",
         alt: "Interior Wooden Spiral Staircase",
         category: "Stair & Railing",
         description: "Interior Wooden Spiral Staircase"
     },
     {
-        src: "/project/images/steel-bar-rails.webp",
+        src: "images/steel-bar-rails.webp",
         alt: "Exterior Steel Bar Rails",
         category: "Stair & Railing",
         description: "Exterior Steel Bar Rails"
     },
     {
-        src: "/project/images/wood-gate-gabion-wall.webp",
+        src: "images/wood-gate-gabion-wall.webp",
         alt: "Exterior Wooden gate and Gabion Wall",
         category: "Gabion Wall",
         description: "Wooden Gate and Gabion Wall"

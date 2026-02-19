@@ -48,14 +48,14 @@ const imageContainer = document.getElementById("random-images");
 
 if (imageContainer) {
     const images = [
-        "/project/images/courtyard-gabion-wall.webp",
-        "/project/images/exterior-steel-cladding.webp",
-        "/project/images/interior-wooden-spiral-staircase.webp",
-        "/project/images/steel-bar-rails.webp",
-        "/project/images/wood-gate-gabion-wall.webp",
-        "/project/images/interior-steel-cladding.webp",
-        "/project/images/gabion-wall-island.webp",
-        "/project/images/glass-steel-railing.webp",
+        "images/courtyard-gabion-wall.webp",
+        "images/exterior-steel-cladding.webp",
+        "images/interior-wooden-spiral-staircase.webp",
+        "images/steel-bar-rails.webp",
+        "images/wood-gate-gabion-wall.webp",
+        "images/interior-steel-cladding.webp",
+        "images/gabion-wall-island.webp",
+        "images/glass-steel-railing.webp",
     ];
 
     const shuffled = images.sort(() => 0.5 - Math.random());
