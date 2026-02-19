@@ -48,7 +48,7 @@ const imageContainer = document.getElementById("random-images");
 
 if (imageContainer) {
     const images = [
-        "images/courtyard-gabion-wall.webp",
+        "/project/images/courtyard-gabion-wall.webp",
         "images/exterior-steel-cladding.webp",
         "images/interior-wooden-spiral-staircase.webp",
         "images/steel-bar-rails.webp",
