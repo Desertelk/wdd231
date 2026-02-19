@@ -48,7 +48,7 @@ const imageContainer = document.getElementById("random-images");
 
 if (imageContainer) {
     const images = [
-        "/images/courtyard-gabion-wall.webp",
+        "images/courtyard-gabion-wall.webp",
         "images/exterior-steel-cladding.webp",
         "images/interior-wooden-spiral-staircase.webp",
         "images/steel-bar-rails.webp",
@@ -76,7 +76,7 @@ const form = document.querySelector(".contact-form");
 if (form) {
     form.addEventListener("submit", (e) => {
         const email = form.querySelector('input[name="email"]').value.trim();
-        const name = form.querySelector('input[name="name"').value.trim();
+        const name = form.querySelector('input[name="name"]').value.trim();
         const project = form.querySelector('select[name="project"]').value;
 
         if (name.length < 2){
