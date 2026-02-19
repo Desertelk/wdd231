@@ -52,11 +52,6 @@ section.wide {
     max-width: 1200px;
 }
 
-.hero {
-    text-align: center;
-    background: #eee;
-}
-
 h1, h2 {
     font-family: 'Lora', serif;
 }
@@ -117,6 +112,8 @@ h1, h2 {
     display: grid;
     gap: 1.5rem;
     padding: 2rem 1rem;
+    text-align: center;
+    background: #eee;
 }
 
 .hero img {
