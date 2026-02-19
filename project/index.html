@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Stairs | Custom Stair craftsmanship</title>
+    <meta name="author" content="Caden Watts">
+    <meta name="description" content="JDStairs is a local Vegas company that provides quality craftsmanship to become a lovely addition to your home.">
+
+    <meta property="og:title" content="JDStairs Home">
+    <meta property="og:description" content="This page is to give more information regarding this Local Vegas business that provides quality products that will be the centerpiece of conversation in your home.">
+    <meta property="og:image" content="https://desertelk.github.io/wdd231/project/images/internal-wooden-spiral-staircase.webp">
+    <meta property="og:url" content="https://desertelk.github.io/wdd231/project/index.html#">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/JDStairs-favicon.png">
+    
+    <link rel="stylesheet" href="/project/styles/normalize.css">
+    <link rel="stylesheet" href="/project/styles/small.css">
+    <link rel="stylesheet" href="/project/styles/larger.css">
+
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/project/images/icon.svg" alt="JD Stairs Logo" class="logo-img">
+        </div>
+        <div class="title">
+            <h1>JD Stairs</h1>
+            <p>Custom Stair Craftsmanship in Las Vegas</p>
+        </div>
+
+        <nav id="main-nav" class="main-nav">
+            <button id="ham-btn" class="hamburger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+                <picture>
+                    <source srcset="/project/images/stair-hero-img-large.webp" media="(min-width: 1000px)">
+                    <source srcset="/project/images/stair-hero-img-med.webp" media="(min-width: 500px)">
+                    <img src="/project/images/stair-hero-img-small.webp" alt="indoor stair with steel rail." width="500" height="250">
+                </picture>
+
+            <div class="hero-text">
+                <h2>Custom Built Stairs for Homes & Businesses</h2>
+                <p>High-quality craftsmanship. Built to last. Designed to impress.</p>
+                <a class="cta" href="contact.html">Request a Quote</a>
+            </div>
+        </section>
+
+        <section class="description">
+            <h2>What We Do</h2>
+            <p>
+                JD Stairs is dedicated to Providing: quality craftsmanship, knowledgeable service, and innovative solutions.
+                We work with homeowners, builders, and businesses to create durable and beautiful architectural solutions.
+            </p>
+        </section>
+
+        <section class="highlight">
+            <h2>Our Work Speaks for Itself</h2>
+            <p>Browse a few of our projects to see the quality of our craftsmanship.</p>
+            <a class="cta" href="gallery.html">View Projects</a>
+        </section>
+
+        <section class="highlight-reel wide">
+            <h2>Featured Work</h2>
+            <div id="random-images" class="image-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p>©️<span id="currentYear"></span> Caden Watts Lima, Peru</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
